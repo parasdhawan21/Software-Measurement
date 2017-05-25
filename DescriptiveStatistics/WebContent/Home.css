@@ -1,0 +1,138 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #FFFFCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #333333;
+}
+a {
+	color: #330000;
+	width: 300px;	
+	font-family:Arial, Helvetica, sans-serif;
+	margin-left: 60px;
+}
+.title {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	line-height: 30px;
+    background-color: #990000; color: #FFFF66;
+}
+.header {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	background-color: #990000;
+    color: #FFFF66;
+}
+a:hover {
+    color: hotpink;
+}
+
+textarea {  
+    height: 100px;
+    width:300px;
+    margin-left: 10px;
+    overflow-y: scroll;
+    resize: none; /* Remove this if you want the user to resize the textarea */
+}
+p{
+	margin-left: 2px;
+}
+h3{
+	margin-left:45%;
+}
+#containerItems{	
+	display: inline-block;	
+	margin-top: 0px;
+	border: 1px solid #000000;
+    width: 400px;   
+    float:left;
+}
+
+#containerLinks{
+	display: inline-block;
+	border: 1px solid #000000;
+	margin-left:300px;
+	margin-top: 0px;
+    width: 200px; 
+    height: 50px;    
+}
+
+#containerButtons{
+	display: inline-block;
+	border: 1px solid #000000;
+	margin-left:300px;
+	margin-top: 50px;
+	width: 200px; 
+    height: 50px;
+}
+
+#leftDiv{
+	float:left;
+	width:300px 
+}
+
+#rightDiv{
+	margin-left:350px;
+	margin-top:0px;
+	width:300px 
+}
+
+#form1 {
+	background-color: #ff8409;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.numbersPValues{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold	
+}
+#linkPara{
+	color: white;
+}
+#btnCreate{
+	margin-left: 50px;
+	background-color: #00ff40;
+	font-weight: bold;
+	width: 100px;
+}
+
+select{
+	width: 100px;
+}
+
+#dropdownEnch{
+	margin-left: 5px;
+}
+
+#numGen{
+	margin-left: 125px;
+}
+
+#genButtonP{
+	margin-left: 150px;
+}
+
+.statsText{
+	
+	margin-left: 50px;
+	width: 150px
+}
+
+#meadianText{
+	margin-left: 40px;
+}
+
+#maxText{
+	margin-left: 55px;
+}
+#minText{
+	margin-left: 58px;
+}
+#stdText{
+	margin-left: 55px;
+}
+
