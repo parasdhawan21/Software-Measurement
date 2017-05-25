@@ -26,7 +26,7 @@ public class MeanCalculator {
  		}
  		
  			double mean= sum/(this.randomNumbersArray.size());
- 			mean=RoundValues.round(mean, 2);
+ 			mean=RoundValues.round(mean, 4);
  			this.meanValue=mean;
  			return mean;
  	}

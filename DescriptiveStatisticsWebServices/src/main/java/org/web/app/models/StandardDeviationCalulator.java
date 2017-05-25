@@ -30,7 +30,7 @@ public class StandardDeviationCalulator {
 	 		}
 	 		
 	 		double stdVal=squarRoot(totalSum/(randomNumbersArray.size()));
-	 		stdVal=RoundValues.round(stdVal, 2);
+	 		stdVal=RoundValues.round(stdVal, 4);
 	 		this.stdValue=stdVal;
 	 		return stdVal;
 	 		

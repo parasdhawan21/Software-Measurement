@@ -28,10 +28,11 @@ public class UnitTestAll {
 	
 	@Before
 	public void initializeTests() {
-		sampleArrayList=new ArrayList<Integer>(Arrays.asList(56,62,49,63,82,49,72,47,89,97,14,3,93,97,52,7,
-							39,0,31,57,99,78,75,78,20,62,46,97,0,41,97,33,17,11,43,99,30,33,22,78,81,36,39,42,
-							21,63,0,36,10,56,54,76,21,91,99,50,69,27,50,53,75,77,80,19,42,98,48,3,24,61,16,67,17,68,28,
-							12,44,66,64,67,17,44,30,14,17,20,23,74,97,52,50,53,37,45,43,17,15,66,16,67)) ;
+		sampleArrayList=new ArrayList<Integer>(Arrays.asList(67,74,58,24,8,99,15,51,34,63,98,59,95,26,91,21,
+											  4,88,18,25,56,87,65,48,84,43,74,57,88,52,35,95,25,8,6,90,20,51,
+											  82,99,29,89,72,55,86,21,28,64,28,11,28,46,82,41,10,13,97,8,44,
+											  57,51,34,46,67,84,53,89,48,31,62,45,4,93,52,72,89,72,31,40,23,6,
+											  42,49,32,15,75,5,41,0,31,50,51,1,6,71,30,66,25,8,92)) ;
 	
 		meanCalc=new MeanCalculator(sampleArrayList);
 		meadianCalc=new MedianCalculator(sampleArrayList);
@@ -46,17 +47,17 @@ public class UnitTestAll {
 	@Test
 	public void test100Values() {
 				
-		assertEquals(48, meanCalc.getMeanValue(),0);
+		assertEquals(48.74, meanCalc.getMeanValue(),0);
 				
-		assertEquals(55, meadianCalc.getMeadianValue(),0);
+		assertEquals(48.5, meadianCalc.getMeadianValue(),0);
 			
-		assertEquals(97, modeCalc.getModeValue());
+		assertEquals(8, modeCalc.getModeValue());
 			
 		assertEquals(99, maxCalc.getMaxValue());
 			
 		assertEquals(0, minCalc.getMinValue());
 			
-		assertEquals(27, stdCalc.getStdValue(),0);
+		assertEquals(28.89, stdCalc.getStdValue(),0);
 		
 	}
 	
