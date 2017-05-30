@@ -2,6 +2,12 @@ package org.web.app.misclleneous;
 
 import java.text.DecimalFormat;
 
+/**
+ * This class round off the value
+ * 
+ * @author ALI and PARAS
+ * @version 1.0 May 2017
+ */
 public class RoundValues {
 
 	public static double round(double value, int places) {
