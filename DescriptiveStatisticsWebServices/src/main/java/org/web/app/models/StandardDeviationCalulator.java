@@ -19,11 +19,11 @@ public class StandardDeviationCalulator {
 	 * @param randomValues
 	 *            An instance of ArrayList of Integer type to be associated with
 	 *            the randomNumbersArray instance
-	 *            
+	 * 
 	 * @param mean
-	 *            An instance of double type to be associated with
-	 *            the mean instance
-	 *            
+	 *            An instance of double type to be associated with the mean
+	 *            instance
+	 * 
 	 */
 	public StandardDeviationCalulator(ArrayList<Integer> randomValues, double mean) {
 		this.randomNumbersArray = randomValues;
@@ -52,13 +52,12 @@ public class StandardDeviationCalulator {
 
 	}
 
-	
 	/**
 	 * Method to calculate the square root
 	 * 
-	 * @param value A double value whose square root need to be found
+	 * @param value
+	 *            A double value whose square root need to be found
 	 */
-	
 	public static double squarRoot(double value) {
 		double t;
 
@@ -71,7 +70,7 @@ public class StandardDeviationCalulator {
 
 		return squareRootValue;
 	}
-	
+
 	/**
 	 * Getter method for Standard Deviation
 	 */
