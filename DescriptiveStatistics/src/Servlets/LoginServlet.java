@@ -25,8 +25,6 @@ public class LoginServlet extends HttpServlet {
  
 public void doGet(HttpServletRequest request, HttpServletResponse response) 
 			           throws ServletException, java.io.IOException {
-
-	//int size=Integer.parseInt(request.getParameter("dropdownNumbers"));
 	
 	try
 	{	    
@@ -38,13 +36,6 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
      JsonElement modelObj = gson.toJsonTree(model);
      myObj.addProperty("success", true);
      myObj.add("stats", modelObj);
-     
-     System.out.println("Got it in Servlet "+model.getMean()); 
-     System.out.println("Got it in Servlet "); 
-     
-     //double mean=model.getStandardDeviation();
-     //int d=55;
-     
      response.setContentType("json");  
      PrintWriter out=response.getWriter();
      out.println(myObj.toString());

@@ -15,12 +15,6 @@ public class MinValueCalculator {
 	private int minValue;
 
 	// Public Members
-	/**
-	 * Default Constructor
-	 **/
-	public MinValueCalculator() {
-
-	}
 
 	/**
 	 * Parameterized Constructor

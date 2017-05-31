@@ -28,7 +28,7 @@ import org.web.app.service.StatisticsService;
 			statsService=new StatisticsService(size);
 			statsModel.setRandomNumbers(statsService.getRandomNumbers());
 			statsModel.setMean(statsService.getMean());
-			statsModel.setMeadian(statsService.getMeadian());
+			statsModel.setMedian(statsService.getMedian());
 			statsModel.setMode(statsService.getMode());
 			statsModel.setMax(statsService.getMax());
 			statsModel.setMin(statsService.getMin());

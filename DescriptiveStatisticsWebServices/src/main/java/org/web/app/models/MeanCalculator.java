@@ -2,7 +2,7 @@ package org.web.app.models;
 
 import java.util.ArrayList;
 
-import org.web.app.misclleneous.RoundValues;
+import org.web.app.Utilities.RoundValues;
 
 /**
  * This class calculates the mean value
@@ -18,13 +18,6 @@ public class MeanCalculator {
 	private double meanValue;
 
 	// Public Members
-
-	/**
-	 * Default Constructor
-	 **/
-	public MeanCalculator() {
-
-	}
 
 	/**
 	 * Parameterized Constructor

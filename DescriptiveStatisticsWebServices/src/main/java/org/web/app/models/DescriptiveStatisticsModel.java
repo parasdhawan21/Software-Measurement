@@ -2,61 +2,142 @@ package org.web.app.models;
 
 import java.util.ArrayList;
 
+/**
+ * This class defines a Statistic Model and its properties
+ * 
+ * @author ALI and PARAS
+ * @version 1.0 May 2017
+ */
 public class DescriptiveStatisticsModel {
 
+	// Private Members
 	private ArrayList<Integer> randomNumbers;
 	private double mean;
-	private double meadian;
+	private double median;
 	private int mode;
 	private int max;
 	private int min;
 	private double standardDeviation;
-	
-	
-	public DescriptiveStatisticsModel() {
-		
-	}
-	
+
+	// Public Members
+	/**
+	 * Setter method for Random Number Arraylist
+	 * 
+	 * @param randNos
+	 *            An instance of ArrayList of Integer type to be associated with
+	 *            the randomNumbers instance
+	 */
 	public void setRandomNumbers(ArrayList<Integer> randNos) {
-		this.randomNumbers=randNos;
+		this.randomNumbers = randNos;
 	}
-	public ArrayList<Integer> getRandomNumbers(){
+
+	/**
+	 * Getter method for Random Number Arraylist
+	 */
+	public ArrayList<Integer> getRandomNumbers() {
 		return this.randomNumbers;
 	}
+
+	/**
+	 * Setter method for Mean
+	 * 
+	 * @param tempMean
+	 *            An instance of double to be associated with the mean instance
+	 */
 	public void setMean(double tempMean) {
-		this.mean=tempMean;
+		this.mean = tempMean;
 	}
+
+	/**
+	 * Getter method for Mean
+	 */
 	public double getMean() {
 		return this.mean;
 	}
-	public void setMeadian(double tempMeadian) {
-		this.meadian=tempMeadian;
+
+	/**
+	 * Setter method for Median
+	 * 
+	 * @param tempMedian
+	 *            An instance of double to be associated with the median
+	 *            instance
+	 */
+	public void setMedian(double tempMedian) {
+		this.median = tempMedian;
 	}
+
+	/**
+	 * Getter method for Random Number Arraylist
+	 */
 	public double getMeadian() {
-		return this.meadian;
+		return this.median;
 	}
+
+	/**
+	 * Setter method Max
+	 * 
+	 * @param tempMax
+	 *            An instance of integer to be associated with the max instance
+	 */
 	public void setMax(int tempMax) {
-		this.max=tempMax;
+		this.max = tempMax;
 	}
+
+	/**
+	 * Getter method for Max
+	 */
 	public int getMax() {
 		return this.max;
 	}
+
+	/**
+	 * Setter method Min
+	 * 
+	 * @param tempMin
+	 *            An instance of integer to be associated with the min instance
+	 */
 	public void setMin(int tempMin) {
-		this.min=tempMin;
+		this.min = tempMin;
 	}
+
+	/**
+	 * Getter method for Min
+	 */
 	public int getMin() {
 		return this.min;
 	}
-	
+
+	/**
+	 * Setter method Mode
+	 * 
+	 * @param tempMode
+	 *            An instance of integer to be associated with the mode instance
+	 */
 	public void setMode(int tempMode) {
-		this.mode=tempMode;
+		this.mode = tempMode;
 	}
+
+	/**
+	 * Getter method for Mode
+	 */
 	public int getMode() {
 		return this.mode;
 	}
+
+	/**
+	 * Setter method Standard Deviation
+	 * 
+	 * @param std
+	 *            An instance of double to be associated with the
+	 *            standardDeviation instance
+	 */
 	public void setStandardDeviation(double std) {
-		this.standardDeviation=std;
+		this.standardDeviation = std;
 	}
+
+	/**
+	 * Getter method for Standard Deviation
+	 */
 	public double getStandardDeviation() {
 		return this.standardDeviation;
 	}

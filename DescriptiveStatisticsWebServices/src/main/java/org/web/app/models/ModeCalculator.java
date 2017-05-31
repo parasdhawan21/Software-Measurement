@@ -15,13 +15,6 @@ public class ModeCalculator {
 	private int modValue;
 
 	// Public Members
-	
-	/**
-	 * Default Constructor
-	 **/
-	public ModeCalculator() {
-
-	}
 
 	/**
 	 * Parameterized Constructor

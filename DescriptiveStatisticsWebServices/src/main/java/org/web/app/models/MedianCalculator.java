@@ -2,7 +2,7 @@ package org.web.app.models;
 
 import java.util.ArrayList;
 
-import org.web.app.misclleneous.RoundValues;
+import org.web.app.Utilities.RoundValues;
 
 /**
  * This class calculates the Median value
@@ -13,17 +13,10 @@ import org.web.app.misclleneous.RoundValues;
 public class MedianCalculator {
 
 	// Private Members
-	private double meadianValue;
+	private double medianValue;
 	private ArrayList<Integer> randomNumbersArray;
 
 	// Public Members
-
-	/**
-	 * Default Constructor
-	 **/
-	public MedianCalculator() {
-
-	}
 
 	/**
 	 * Parameterized Constructor
@@ -48,12 +41,12 @@ public class MedianCalculator {
 		int middleValue = randomNumbersArray.size() / 2;
 		if (randomNumbersArray.size() % 2 == 1) {
 			double meadianValue = randomNumbersArray.get(middleValue);
-			this.meadianValue = meadianValue;
+			this.medianValue = meadianValue;
 			return meadianValue;
 		} else {
 			double meadianValue = (randomNumbersArray.get(middleValue - 1) + randomNumbersArray.get(middleValue)) / 2.0;
 			meadianValue = RoundValues.round(meadianValue, 4);
-			this.meadianValue = meadianValue;
+			this.medianValue = meadianValue;
 			return meadianValue;
 		}
 	}
@@ -80,8 +73,8 @@ public class MedianCalculator {
 	/**
 	 * Getter method for Median Value
 	 */
-	public double getMeadianValue() {
-		return this.meadianValue;
+	public double getMedianValue() {
+		return this.medianValue;
 	}
 
 	public void copyAllValues(ArrayList<Integer> tempArray) {

@@ -19,7 +19,7 @@ public class UnitTestAll {
 	
 	private ArrayList<Integer>sampleArrayList;
 	private MeanCalculator  meanCalc;
-	private MedianCalculator meadianCalc;
+	private MedianCalculator medianCalc;
 	private ModeCalculator modeCalc;
 	private MaxValueCalculator maxCalc;
 	private MinValueCalculator minCalc;
@@ -35,7 +35,7 @@ public class UnitTestAll {
 											  42,49,32,15,75,5,41,0,31,50,51,1,6,71,30,66,25,8,92)) ;
 	
 		meanCalc=new MeanCalculator(sampleArrayList);
-		meadianCalc=new MedianCalculator(sampleArrayList);
+		medianCalc=new MedianCalculator(sampleArrayList);
 		modeCalc=new ModeCalculator(sampleArrayList); 
 		maxCalc=new MaxValueCalculator(sampleArrayList);
 		minCalc=new MinValueCalculator(sampleArrayList);
@@ -49,7 +49,7 @@ public class UnitTestAll {
 				
 		assertEquals(48.74, meanCalc.getMeanValue(),0);
 				
-		assertEquals(48.5, meadianCalc.getMeadianValue(),0);
+		assertEquals(48.5, medianCalc.getMedianValue(),0);
 			
 		assertEquals(8, modeCalc.getModeValue());
 			
@@ -68,7 +68,7 @@ public class UnitTestAll {
 		
 		sampleArrayList=null;
 		meanCalc=null;
-		meadianCalc=null;
+		medianCalc=null;
 		modeCalc=null;
 		maxCalc=null;
 		minCalc=null;

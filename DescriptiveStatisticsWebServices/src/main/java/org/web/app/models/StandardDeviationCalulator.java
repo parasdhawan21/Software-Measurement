@@ -2,7 +2,7 @@ package org.web.app.models;
 
 import java.util.ArrayList;
 
-import org.web.app.misclleneous.RoundValues;
+import org.web.app.Utilities.RoundValues;
 
 public class StandardDeviationCalulator {
 
@@ -12,12 +12,6 @@ public class StandardDeviationCalulator {
 	private double mean;
 
 	// Public Members
-	/**
-	 * Default Constructor
-	 **/
-	public StandardDeviationCalulator() {
-
-	}
 
 	/**
 	 * Parameterized Constructor

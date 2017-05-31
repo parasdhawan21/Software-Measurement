@@ -11,18 +11,11 @@ import java.util.ArrayList;
 public class MaxValueCalculator {
 
 	// Private Members
-	
+
 	private ArrayList<Integer> randomNumbersArray;
 	private int maxValue;
 
 	// Public Members
-
-	/**
-	 * Default Constructor
-	 **/
-	public MaxValueCalculator() {
-
-	}
 
 	/**
 	 * Parameterized Constructor

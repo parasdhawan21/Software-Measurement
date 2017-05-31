@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /**
  * This class defines a Statistic Model and its properties
  * 
+ * @author ALI and PARAS
  * @version 1.0 May 2017
  */
 public class DescriptiveStatisticsModel {
@@ -18,12 +19,7 @@ public class DescriptiveStatisticsModel {
 	private int min;
 	private double standardDeviation;
 
-	// Defeault Constructor
-	public DescriptiveStatisticsModel() {
-
-	}
-
-	//Public Members
+	// Public Members
 	/**
 	 * Setter method for Random Number Arraylist
 	 * 
@@ -63,8 +59,8 @@ public class DescriptiveStatisticsModel {
 	 * Setter method for Median
 	 * 
 	 * @param tempMedian
-	 *            An instance of double to be associated with
-	 *            the median instance
+	 *            An instance of double to be associated with the median
+	 *            instance
 	 */
 	public void setMedian(double tempMedian) {
 		this.median = tempMedian;
@@ -81,8 +77,7 @@ public class DescriptiveStatisticsModel {
 	 * Setter method Max
 	 * 
 	 * @param tempMax
-	 *            An instance of integer to be associated with
-	 *            the max instance
+	 *            An instance of integer to be associated with the max instance
 	 */
 	public void setMax(int tempMax) {
 		this.max = tempMax;
@@ -95,13 +90,11 @@ public class DescriptiveStatisticsModel {
 		return this.max;
 	}
 
-
 	/**
 	 * Setter method Min
 	 * 
 	 * @param tempMin
-	 *            An instance of integer to be associated with
-	 *            the min instance
+	 *            An instance of integer to be associated with the min instance
 	 */
 	public void setMin(int tempMin) {
 		this.min = tempMin;
@@ -114,18 +107,15 @@ public class DescriptiveStatisticsModel {
 		return this.min;
 	}
 
-
 	/**
 	 * Setter method Mode
 	 * 
 	 * @param tempMode
-	 *            An instance of integer to be associated with
-	 *            the mode instance
+	 *            An instance of integer to be associated with the mode instance
 	 */
 	public void setMode(int tempMode) {
 		this.mode = tempMode;
 	}
-
 
 	/**
 	 * Getter method for Mode
@@ -134,18 +124,16 @@ public class DescriptiveStatisticsModel {
 		return this.mode;
 	}
 
-
 	/**
 	 * Setter method Standard Deviation
 	 * 
 	 * @param std
-	 *            An instance of double to be associated with
-	 *            the standardDeviation instance
+	 *            An instance of double to be associated with the
+	 *            standardDeviation instance
 	 */
 	public void setStandardDeviation(double std) {
 		this.standardDeviation = std;
 	}
-
 
 	/**
 	 * Getter method for Standard Deviation

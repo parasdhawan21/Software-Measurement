@@ -14,7 +14,7 @@ public class StatisticsService {
 
 	private RandomGenerator randomGen;
 	private MeanCalculator  meanCalc;
-	private MedianCalculator meadianCalc;
+	private MedianCalculator medianCalc;
 	private ModeCalculator modeCalc;
 	private MaxValueCalculator maxCalc;
 	private MinValueCalculator minCalc;
@@ -24,7 +24,7 @@ public class StatisticsService {
 		
 	    randomGen=new RandomGenerator(size);
 		meanCalc=new MeanCalculator(randomGen.getRandomArray());	
-		meadianCalc=new MedianCalculator(randomGen.getRandomArray());
+		medianCalc=new MedianCalculator(randomGen.getRandomArray());
 		modeCalc=new ModeCalculator(randomGen.getRandomArray()); 
 		maxCalc=new MaxValueCalculator(randomGen.getRandomArray());
 		minCalc=new MinValueCalculator(randomGen.getRandomArray());
@@ -54,8 +54,8 @@ public class StatisticsService {
 		return this.modeCalc.getModeValue();
 	}
 	
-	public double getMeadian() {
-		return this.meadianCalc.getMeadianValue();
+	public double getMedian() {
+		return this.medianCalc.getMedianValue();
 	}
 	
 	public double getSTD() {
