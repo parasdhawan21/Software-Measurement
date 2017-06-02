@@ -51,7 +51,7 @@ public class UnitTestAll {
 				
 		assertEquals(46.16, meanCalc.getMeanValue(),0);
 				
-		assertEquals(47.5, meadianCalc.getMeadianValue(),0);
+		assertEquals(47.5, meadianCalc.getMedianValue(),0);
 			
 		assertEquals("23", modeCalc.getModeValue());
 			

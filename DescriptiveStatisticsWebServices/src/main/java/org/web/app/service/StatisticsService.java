@@ -50,7 +50,7 @@ public class StatisticsService {
 		return this.minCalc.getMinValue();
 	}
 	
-	public int getMode() {
+	public String getMode() {
 		return this.modeCalc.getModeValue();
 	}
 	
