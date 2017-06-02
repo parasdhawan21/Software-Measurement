@@ -14,7 +14,7 @@ public class DescriptiveStatisticsModel {
 	private ArrayList<Integer> randomNumbers;
 	private double mean;
 	private double median;
-	private int mode;
+	private String mode;
 	private int max;
 	private int min;
 	private double standardDeviation;
@@ -113,14 +113,14 @@ public class DescriptiveStatisticsModel {
 	 * @param tempMode
 	 *            An instance of integer to be associated with the mode instance
 	 */
-	public void setMode(int tempMode) {
+	public void setMode(String tempMode) {
 		this.mode = tempMode;
 	}
 
 	/**
 	 * Getter method for Mode
 	 */
-	public int getMode() {
+	public String getMode() {
 		return this.mode;
 	}
 

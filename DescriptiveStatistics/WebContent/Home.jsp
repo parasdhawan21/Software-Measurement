@@ -23,25 +23,25 @@
   			 <input id="submitButton" class ="genBut" type="submit" value="Generate Descriptive Statistics" ><br><br><br>	
   			 </p>
   			 <p id="randomNoBox" class="numbersPValues"> Random Nos :<br>
-  			 <textarea  id="randomNoText"  class="randomNoText" ></textarea><br><br><br>	
+  			 <textarea  id="randomNoText"  class="randomNoText" readonly></textarea><br><br><br>	
   			 </p>
   			 <p id="meanBox" class="numbersPValues"> Mean :
-  			 <input id="meanText" class ="statsText" type="text" ><br><br><br>	
+  			 <input id="meanText" class ="statsText" type="text" readonly><br><br><br>	
   			 </p>
   			 <p id="meadianBox" class="numbersPValues"> Median :
   			 <input id="meadianText" class ="statsText" type="text" ><br><br><br>	
   			 </p>
   			 <p id="modeBox" class="numbersPValues"> Mode :
-  			 <input id="modeText" class ="statsText" type="text" ><br><br><br>	
+  			 <textarea id="modeText" class ="textMode" readonly></textarea><br><br><br>	
   			 </p>
   			 <p id="maxBox" class="numbersPValues"> Max :
-  			 <input id="maxText" class ="statsText" type="text" ><br><br><br>	
+  			 <input id="maxText" class ="statsText" type="text" readonly><br><br><br>	
   			 </p>
   			 <p id="minBox" class="numbersPValues"> Min :
-  			 <input id="minText" class ="statsText" type="text" ><br><br><br>	
+  			 <input id="minText" class ="statsText" type="text" readonly><br><br><br>	
   			 </p>
   			 <p id="stdBox" class="numbersPValues"> STD :
-  			 <input id="stdText" class ="statsText" type="text" ><br><br><br>	
+  			 <input id="stdText" class ="statsText" type="text" readonly><br><br><br>	
   			 </p>
 			</form>
 		</div>
@@ -73,7 +73,7 @@
 			$('#randomNoText').val(data.stats.randomNumbers);
 			$('#meanText').attr("value",data.stats.mean);
 			$('#meadianText').attr("value",data.stats.meadian);
-			$('#modeText').attr("value",data.stats.mode);
+			$('#modeText').val(data.stats.mode);
 			$('#maxText').attr("value",data.stats.max);
 			$('#minText').attr("value",data.stats.min);
 			$('#stdText').attr("value",data.stats.standardDeviation);

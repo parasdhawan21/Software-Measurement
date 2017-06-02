@@ -35,6 +35,16 @@ textarea {
     margin-left: 10px;
     overflow-y: scroll;
     resize: none; /* Remove this if you want the user to resize the textarea */
+    
+}
+
+.textMode {  
+    overflow-y: scroll; 
+    margin-left: 50px;
+	width: 150px;
+	height: 20px;
+	font-family:Arial;
+    resize: none; /* Remove this if you want the user to resize the textarea */
 }
 p{
 	margin-left: 2px;
@@ -119,7 +129,9 @@ select{
 .statsText{
 	
 	margin-left: 50px;
-	width: 150px
+	width: 150px;
+	height: 20px;
+	font-family:Arial;
 }
 
 #meadianText{

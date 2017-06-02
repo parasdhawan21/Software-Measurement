@@ -37,7 +37,6 @@ public class HTTPClientResource {
 	  public  void setStatisticsObject(String response) {
 		   statisticsModel=new DescriptiveStatisticsModel();
 		   statisticsModel=(DescriptiveStatisticsModel) getObjectFromJson(response,DescriptiveStatisticsModel.class);
-		   System.out.println("Mean is ->>"+statisticsModel.getMean());
 	  }
 	 
 
@@ -57,7 +56,7 @@ public class HTTPClientResource {
 	  
 	    // Create a method instance.
 	    url=url+"/"+size;
-	    System.out.println("URL=== "+url);
+
 	    GetMethod method = new GetMethod(url);
 	    
 	    // Provide custom retry handler is necessary
@@ -65,6 +64,7 @@ public class HTTPClientResource {
 	    		new DefaultHttpMethodRetryHandler(3, false));
 
 	    try {
+
 	      // Execute the method.
 	      int statusCode = client.executeMethod(method);
 
@@ -76,16 +76,21 @@ public class HTTPClientResource {
 	      
 	      // Deal with the response.
 	      // Use caution: ensure correct character encoding and is not binary data
-	      System.out.println(new String(responseBody));
+	     
 	      setStatisticsObject(new String(responseBody));
 
 	    } catch (HttpException e) {
+
 	      System.err.println("Fatal protocol violation: " + e.getMessage());
 	      e.printStackTrace();
+
 	    } catch (IOException e) {
+
 	      System.err.println("Fatal transport error: " + e.getMessage());
 	      e.printStackTrace();
+
 	    } finally {
+
 	      // Release the connection.
 	      method.releaseConnection();
 	    }  
