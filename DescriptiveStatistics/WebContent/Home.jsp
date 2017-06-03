@@ -31,23 +31,25 @@
 					<br> <br> <br>
 				</p>
 				<div id="upperDiv">
-					<span id="meanBox" class="numbersPValues"> 
-					Mean : <input id="meanText" class="statsText" type="text" readonly> 
-					<span class="spaceSpan"></span> 
-					Median : <input id="meadianText" type="text"> <span class="spaceSpan"></span> 
-					Mode : <textarea id="modeText" class="textMode" readonly></textarea>
+					<span id="meanBox" class="numbersPValues"> Mean : <input
+						id="meanText" class="statsText" type="text" readonly> <span
+						class="spaceSpan"></span> Median : <input id="meadianText"
+						type="text"> <span class="spaceSpan"></span> Mode : <textarea
+							id="modeText" class="textMode" readonly></textarea>
 					</span>
 				</div>
-				
+
 				<div id="lowerDiv">
-					<span id="maxBox" class="numbersPValues">
-					Max : <input id="maxText" class="statsText" type="text" readonly>
-					<span class="spaceSpan"></span> <span class="spaceSpan"></span> 
-					Min : <input id="minText" class="statsText" type="text" readonly><span class="spaceSpan"></span>
-					Standard Deviation : <input id="stdText" class="statsText" type="text" readonly>
+					<span id="maxBox" class="numbersPValues"> Max : <input
+						id="maxText" class="statsText" type="text" readonly> <span
+						class="spaceSpan"></span> <span class="spaceSpan"></span> Min : <input
+						id="minText" class="statsText" type="text" readonly><span
+						class="spaceSpan"></span> Standard Deviation : <input id="stdText"
+						class="statsText" type="text" readonly>
 					</span>
 				</div>
-				<br><br>
+				<br>
+				<br>
 			</form>
 		</div>
 	</div>
@@ -56,7 +58,7 @@
 	<script>
 		function setNumberCountDropDown() {
 			var element = document.getElementById("dropdownNumbers");
-			for (i = 100; i > 2; i--) {
+			for (i = 200; i > 2; i--) {
 				var option = document.createElement('option');
 				option.text = option.value = i;
 				element.add(option, 0);
@@ -82,11 +84,6 @@
 					$('#minText').attr("value", data.stats.min);
 					$('#stdText').attr("value", data.stats.standardDeviation);
 				},
-
-			/*beforeSend: function(jqXHR, settings){
-			    //disable the button until we get the response
-			    $('#submitButton').attr("disabled", true);
-			}*/
 
 			});
 

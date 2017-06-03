@@ -37,18 +37,18 @@ textarea {
 	height: 100px;
 	width: 600px;
 	margin-left: 10px;
-	vertical-align:top;
-	over	flow-y: scroll;
+	vertical-align: top;
+	over flow-y: scroll;
 	resize: none;
 	/* Remove this if you want the user to resize the textarea */
 }
 
 .textMode {
-	margin-top:5px;
+	margin-top: 5px;
 	margin-left: 100px;
 	width: 150px;
 	height: 20px;
-	vertical-align:bottom;
+	vertical-align: bottom;
 	font-family: Arial;
 	overflow-y: scroll;
 	resize: none;
@@ -58,7 +58,8 @@ textarea {
 p {
 	margin-left: 2px;
 }
-#mainHeading{
+
+#mainHeading {
 	margin-left: 500px;
 	font-size: 18px;
 	font-weight: bold;
@@ -70,7 +71,7 @@ p {
 	border: 1px solid #000000;
 	width: 900px;
 	float: left;
-	height: 500px; 	
+	height: 500px;
 }
 
 #upperDiv {
@@ -81,7 +82,7 @@ p {
 
 #lowerDiv {
 	float: left;
-	margin-top:10px;
+	margin-top: 10px;
 	width: 800px;
 	height: 50px;
 }
@@ -90,7 +91,7 @@ p {
 	background-color: #ff8409;
 	margin-left: 10px;
 	margin-right: 10px;
-	height:480px;
+	height: 480px;
 }
 
 .numbersPValues {
@@ -99,12 +100,13 @@ p {
 	font-weight: bold;
 }
 
-.meadianBox{
+.meadianBox {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
-	margin-left:10px;
+	margin-left: 10px;
 }
+
 #linkPara {
 	color: white;
 }
@@ -140,9 +142,10 @@ select {
 	font-family: Arial;
 }
 
-.spaceSpan{
+.spaceSpan {
 	margin-left: 20px;
 }
+
 #meadianText {
 	margin-left: 25px;
 	height: 20px;
@@ -152,20 +155,21 @@ select {
 #maxText {
 	margin-left: 30px;
 	width: 100px;
-	vertical-align:top;
+	vertical-align: top;
 }
 
 #minText {
 	margin-left: 28px;
-	width: 100px;	
-	vertical-align:top;
+	width: 100px;
+	vertical-align: top;
 }
 
 #stdText {
 	margin-left: 25px;
-	vertical-align:top;
+	vertical-align: top;
 }
-#meanText{
+
+#meanText {
 	width: 100px;
-	vertical-align:bottom;
+	vertical-align: bottom;
 }
