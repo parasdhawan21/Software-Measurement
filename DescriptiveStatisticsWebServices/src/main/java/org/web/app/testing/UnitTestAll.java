@@ -74,8 +74,8 @@ public class UnitTestAll {
 			sampleArrayList = randomGenerator.getRandomArray();
 			minCalc = new MinValueCalculator(sampleArrayList);
 			maxCalc = new MaxValueCalculator(sampleArrayList);
-			assertTrue(minCalc.getMinValue()>0);
-			assertTrue(maxCalc.getMaxValue()<=99);
+			assertTrue(minCalc.getMinValue()>=0);
+			assertTrue(maxCalc.getMaxValue()<=100);
 		}
 	}
 	
