@@ -38,13 +38,14 @@ public class RandomGenerator {
 		int randNo;
 		float tempRandNo;
 
-		  for(int i=0;i<size;i++) {	
+	   	   for(int i=0;i<size;i++) {	
 			   seed=System.nanoTime();	
-			   tempRandNo = ((seed * 25173 + 13849) %65536);
-			   tempRandNo=(tempRandNo/65536);
-			   randNo=(int) (101*tempRandNo+0); 	
+			   tempRandNo = ((seed * 25173 + 13849) %101);
+			   tempRandNo=(tempRandNo/101);
+			   randNo=(int) (100*tempRandNo+0);
+			   System.out.println(randNo);	
 			   randomArray.add(randNo);		   
-		   }  
+		   } 
 	}
 
 	/**
