@@ -26,7 +26,7 @@
 					<br>
 				</p>
 				<p id="randomNoBox" class="numbersPValues">
-					Random Nos :<br>
+					Random Numbers :<br>
 					<textarea id="randomNoText" class="randomNoText" readonly></textarea>
 					<br> <br> <br>
 				</p>
