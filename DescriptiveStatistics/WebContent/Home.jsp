@@ -10,7 +10,7 @@
 </head>
 <body onload="setNumberCountDropDown()">
 
-	<h3>Descriptive Statistics</h3>
+	<h3 id=mainHeading>Descriptive Statistics</h3>
 	<div id="containerMain">
 		<div id="containerItems">
 			<form id="form1" name="form1" method="get" action="LoginServlet">
@@ -26,7 +26,7 @@
 					<br>
 				</p>
 				<p id="randomNoBox" class="numbersPValues">
-					Random Numbers :<br>
+					Random Nos :<br>
 					<textarea id="randomNoText" class="randomNoText" readonly></textarea>
 					<br> <br> <br>
 				</p>
@@ -42,9 +42,9 @@
 				<div id="lowerDiv">
 					<span id="maxBox" class="numbersPValues">
 					Max : <input id="maxText" class="statsText" type="text" readonly>
-					<span class="spaceSpan"></span> 
-					Min : <input id="minText" class="statsText" type="text" readonly><span class="spaceSpan"></span> 
-					Standard Deviation : <input id="stdText" class="statsText" type="text" readonly></textarea>
+					<span class="spaceSpan"></span> <span class="spaceSpan"></span> 
+					Min : <input id="minText" class="statsText" type="text" readonly><span class="spaceSpan"></span>
+					Standard Deviation : <input id="stdText" class="statsText" type="text" readonly>
 					</span>
 				</div>
 				<br><br>

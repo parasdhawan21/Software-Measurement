@@ -38,19 +38,14 @@ public class RandomGenerator {
 		int randNo;
 		float tempRandNo;
 
-		for (int i = 0; i < size; i++) {
-			// Factor for Randomness
-			seed = System.nanoTime();
-			tempRandNo = ((seed * 25173 + 13849) % 100);
-			if (tempRandNo < 0) {
-				tempRandNo = tempRandNo * -1;
-			}
-			if (tempRandNo == 0) {
-				tempRandNo++;
-			}
-			randNo = (int) tempRandNo;
-			randomArray.add(randNo);
-		}
+		   for(int i=0;i<size;i++) {	
+			   seed=System.nanoTime();	
+			   tempRandNo = ((seed * 25173 + 13849) %101);
+			   tempRandNo=(tempRandNo/101);
+			   randNo=(int) (100*tempRandNo+0);
+			   System.out.println(randNo);	
+			   randomArray.add(randNo);		   
+		   } 
 	}
 
 	/**

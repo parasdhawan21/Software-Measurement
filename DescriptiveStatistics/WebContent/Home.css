@@ -37,16 +37,18 @@ textarea {
 	height: 100px;
 	width: 600px;
 	margin-left: 10px;
-	overflow-y: scroll;
+	vertical-align:top;
+	over	flow-y: scroll;
 	resize: none;
 	/* Remove this if you want the user to resize the textarea */
 }
 
 .textMode {
 	margin-top:5px;
-	margin-left: 25px;
+	margin-left: 100px;
 	width: 150px;
 	height: 20px;
+	vertical-align:bottom;
 	font-family: Arial;
 	overflow-y: scroll;
 	resize: none;
@@ -56,9 +58,10 @@ textarea {
 p {
 	margin-left: 2px;
 }
-
-h3 {
-	margin-left: 45%;
+#mainHeading{
+	margin-left: 500px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 #containerItems {
@@ -122,7 +125,8 @@ select {
 }
 
 #numGen {
-	margin-left: 125px;
+	margin-left: 375px;
+	font-weight: bold;
 }
 
 #genButtonP {
@@ -148,16 +152,20 @@ select {
 #maxText {
 	margin-left: 30px;
 	width: 100px;
+	vertical-align:top;
 }
 
 #minText {
-	margin-left: 48px;
+	margin-left: 28px;
 	width: 100px;	
+	vertical-align:top;
 }
 
 #stdText {
 	margin-left: 25px;
+	vertical-align:top;
 }
 #meanText{
 	width: 100px;
+	vertical-align:bottom;
 }
