@@ -2,149 +2,162 @@
 
 body {
 	background-color: #FFFFCC;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 24px;
 	color: #333333;
 }
+
 a {
 	color: #330000;
-	width: 300px;	
-	font-family:Arial, Helvetica, sans-serif;
+	width: 300px;
+	font-family: Arial, Helvetica, sans-serif;
 	margin-left: 60px;
 }
+
 .title {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 18px;
 	line-height: 30px;
-    background-color: #990000; color: #FFFF66;
+	background-color: #990000;
+	color: #FFFF66;
 }
+
 .header {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 24px;
 	background-color: #990000;
-    color: #FFFF66;
+	color: #FFFF66;
 }
+
 a:hover {
-    color: hotpink;
+	color: hotpink;
 }
 
-textarea {  
-    height: 100px;
-    width:300px;
-    margin-left: 10px;
-    overflow-y: scroll;
-    resize: none; /* Remove this if you want the user to resize the textarea */
-    
+textarea {
+	height: 100px;
+	width: 600px;
+	margin-left: 10px;
+	overflow-y: scroll;
+	resize: none;
+	/* Remove this if you want the user to resize the textarea */
 }
 
-.textMode {  
-    overflow-y: scroll; 
-    margin-left: 50px;
+.textMode {
+	margin-top:5px;
+	margin-left: 25px;
 	width: 150px;
 	height: 20px;
-	font-family:Arial;
-    resize: none; /* Remove this if you want the user to resize the textarea */
+	font-family: Arial;
+	overflow-y: scroll;
+	resize: none;
+	/* Remove this if you want the user to resize the textarea */
 }
-p{
+
+p {
 	margin-left: 2px;
 }
-h3{
-	margin-left:45%;
+
+h3 {
+	margin-left: 45%;
 }
-#containerItems{	
-	display: inline-block;	
+
+#containerItems {
+	display: inline-block;
 	margin-top: 0px;
 	border: 1px solid #000000;
-    width: 400px;   
-    float:left;
+	width: 900px;
+	float: left;
+	height: 500px; 	
 }
 
-#containerLinks{
-	display: inline-block;
-	border: 1px solid #000000;
-	margin-left:300px;
-	margin-top: 0px;
-    width: 200px; 
-    height: 50px;    
+#upperDiv {
+	float: left;
+	width: 800px;
+	height: 50px;
 }
 
-#containerButtons{
-	display: inline-block;
-	border: 1px solid #000000;
-	margin-left:300px;
-	margin-top: 50px;
-	width: 200px; 
-    height: 50px;
-}
-
-#leftDiv{
-	float:left;
-	width:300px 
-}
-
-#rightDiv{
-	margin-left:350px;
-	margin-top:0px;
-	width:300px 
+#lowerDiv {
+	float: left;
+	margin-top:10px;
+	width: 800px;
+	height: 50px;
 }
 
 #form1 {
 	background-color: #ff8409;
 	margin-left: 10px;
 	margin-right: 10px;
+	height:480px;
 }
 
-.numbersPValues{
+.numbersPValues {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	font-weight: bold	
+	font-weight: bold;
 }
-#linkPara{
+
+.meadianBox{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left:10px;
+}
+#linkPara {
 	color: white;
 }
-#btnCreate{
+
+#btnCreate {
 	margin-left: 50px;
 	background-color: #00ff40;
 	font-weight: bold;
 	width: 100px;
 }
 
-select{
+select {
 	width: 100px;
 }
 
-#dropdownEnch{
+#dropdownEnch {
 	margin-left: 5px;
 }
 
-#numGen{
+#numGen {
 	margin-left: 125px;
 }
 
-#genButtonP{
+#genButtonP {
 	margin-left: 150px;
 }
 
-.statsText{
-	
-	margin-left: 50px;
+.statsText {
+	margin-left: 25px;
 	width: 150px;
 	height: 20px;
-	font-family:Arial;
+	font-family: Arial;
 }
 
-#meadianText{
-	margin-left: 40px;
+.spaceSpan{
+	margin-left: 20px;
+}
+#meadianText {
+	margin-left: 25px;
+	height: 20px;
+	width: 100px;
 }
 
-#maxText{
-	margin-left: 55px;
-}
-#minText{
-	margin-left: 58px;
-}
-#stdText{
-	margin-left: 55px;
+#maxText {
+	margin-left: 30px;
+	width: 100px;
 }
 
+#minText {
+	margin-left: 48px;
+	width: 100px;	
+}
+
+#stdText {
+	margin-left: 25px;
+}
+#meanText{
+	width: 100px;
+}

@@ -16,55 +16,38 @@
 			<form id="form1" name="form1" method="get" action="LoginServlet">
 				<h3 id=numGen>Statistics Form</h3>
 				<p id="numbersP" class="numbersPValues">
-					Number of Random Numbers: <select id="dropdownNumbers"
+					No of Random Numbers: <select id="dropdownNumbers"
 						name="dropdownNumbers" onclick="">
 					</select>
 				</p>
 				<p id="genButtonP" class="genButtonP">
 					<input id="submitButton" class="genBut" type="submit"
-						value="Generate Descriptive Statistics"><br>
-					<br>
+						value="Generate Descriptive Statistics"><br> <br>
 					<br>
 				</p>
 				<p id="randomNoBox" class="numbersPValues">
-					Random Numbers :<br>
+					Random Nos :<br>
 					<textarea id="randomNoText" class="randomNoText" readonly></textarea>
-					<br>
-					<br>
-					<br>
+					<br> <br> <br>
 				</p>
-				<p id="meanBox" class="numbersPValues">
-					Mean : <input id="meanText" class="statsText" type="text" readonly><br>
-					<br>
-					<br>
-				</p>
-				<p id="meadianBox" class="numbersPValues">
-					Median : <input id="meadianText" class="statsText" type="text"><br>
-					<br>
-					<br>
-				</p>
-				<p id="modeBox" class="numbersPValues">
-					Mode :
-					<textarea id="modeText" class="textMode" readonly></textarea>
-					<br>
-					<br>
-					<br>
-				</p>
-				<p id="maxBox" class="numbersPValues">
-					Maximum : <input id="maxText" class="statsText" type="text" readonly><br>
-					<br>
-					<br>
-				</p>
-				<p id="minBox" class="numbersPValues">
-					Minimum : <input id="minText" class="statsText" type="text" readonly><br>
-					<br>
-					<br>
-				</p>
-				<p id="stdBox" class="numbersPValues">
-					Standard Deviation : <input id="stdText" class="statsText" type="text" readonly><br>
-					<br>
-					<br>
-				</p>
+				<div id="upperDiv">
+					<span id="meanBox" class="numbersPValues"> 
+					Mean : <input id="meanText" class="statsText" type="text" readonly> 
+					<span class="spaceSpan"></span> 
+					Median : <input id="meadianText" type="text"> <span class="spaceSpan"></span> 
+					Mode : <textarea id="modeText" class="textMode" readonly></textarea>
+					</span>
+				</div>
+				
+				<div id="lowerDiv">
+					<span id="maxBox" class="numbersPValues">
+					Max : <input id="maxText" class="statsText" type="text" readonly>
+					<span class="spaceSpan"></span> 
+					Min : <input id="minText" class="statsText" type="text" readonly><span class="spaceSpan"></span> 
+					Standard Deviation : <input id="stdText" class="statsText" type="text" readonly></textarea>
+					</span>
+				</div>
+				<br><br>
 			</form>
 		</div>
 	</div>
@@ -73,7 +56,7 @@
 	<script>
 		function setNumberCountDropDown() {
 			var element = document.getElementById("dropdownNumbers");
-			for (i = 200; i > 2; i--) {
+			for (i = 100; i > 2; i--) {
 				var option = document.createElement('option');
 				option.text = option.value = i;
 				element.add(option, 0);
@@ -93,12 +76,17 @@
 				success : function(data) {
 					$('#randomNoText').val(data.stats.randomNumbers);
 					$('#meanText').attr("value", data.stats.mean);
-					$('#meadianText').attr("value", data.stats.median);
+					$('#meadianText').attr("value", data.stats.meadian);
 					$('#modeText').val(data.stats.mode);
 					$('#maxText').attr("value", data.stats.max);
 					$('#minText').attr("value", data.stats.min);
 					$('#stdText').attr("value", data.stats.standardDeviation);
 				},
+
+			/*beforeSend: function(jqXHR, settings){
+			    //disable the button until we get the response
+			    $('#submitButton').attr("disabled", true);
+			}*/
 
 			});
 
