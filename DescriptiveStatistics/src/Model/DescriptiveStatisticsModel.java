@@ -69,7 +69,7 @@ public class DescriptiveStatisticsModel {
 	/**
 	 * Getter method for Random Number Arraylist
 	 */
-	public double getMeadian() {
+	public double getMedian() {
 		return this.median;
 	}
 

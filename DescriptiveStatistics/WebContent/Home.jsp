@@ -16,14 +16,15 @@
 			<form id="form1" name="form1" method="get" action="LoginServlet">
 				<h3 id=numGen>Statistics Form</h3>
 				<p id="numbersP" class="numbersPValues">
-					No of Random Numbers: <select id="dropdownNumbers"
-						name="dropdownNumbers" onclick="">
-					</select>
+					No of Random Numbers: <input type="text" maxlength="4"
+						onkeypress="return validateInput(event);" id="dropdownNumbers"
+						name="dropdownNumbers"></input>
+
 				</p>
 				<p id="genButtonP" class="genButtonP">
 					<input id="submitButton" class="genBut" type="submit"
-						value="Generate Descriptive Statistics"><br> <br>
-					<br>
+						value="Generate Descriptive Statistics"
+						onclick="return isEmpty();"><br> <br> <br>
 				</p>
 				<p id="randomNoBox" class="numbersPValues">
 					Random Nos :<br>
@@ -48,22 +49,29 @@
 						class="statsText" type="text" readonly>
 					</span>
 				</div>
-				<br>
-				<br>
+				<br> <br>
 			</form>
 		</div>
 	</div>
 
 	<script type="text/javascript" src="javascript/jquery-3.2.1.js"></script>
 	<script>
-		function setNumberCountDropDown() {
-			var element = document.getElementById("dropdownNumbers");
-			for (i = 200; i > 2; i--) {
-				var option = document.createElement('option');
-				option.text = option.value = i;
-				element.add(option, 0);
+		function validateInput(evt) {
+			evt = (evt) ? evt : window.event;
+			var charCode = (evt.which) ? evt.which : evt.keyCode;
+			if ((charCode < 48) || (charCode > 57)) {
+				return false;
 			}
-			document.getElementById("dropdownNumbers").selectedIndex = "97"
+			return true;
+		}
+
+		function isEmpty() {
+			var element = document.getElementById("dropdownNumbers").value;
+			if (element.length<1) {
+				alert("Please provide the count for random numbers.");
+				return false;
+			}
+			return true;
 		}
 
 		$('#form1').submit(function() {
@@ -78,7 +86,7 @@
 				success : function(data) {
 					$('#randomNoText').val(data.stats.randomNumbers);
 					$('#meanText').attr("value", data.stats.mean);
-					$('#meadianText').attr("value", data.stats.meadian);
+					$('#meadianText').attr("value", data.stats.median);
 					$('#modeText').val(data.stats.mode);
 					$('#maxText').attr("value", data.stats.max);
 					$('#minText').attr("value", data.stats.min);
