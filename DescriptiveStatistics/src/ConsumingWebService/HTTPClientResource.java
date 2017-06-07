@@ -78,6 +78,7 @@ public class HTTPClientResource {
 	      // Use caution: ensure correct character encoding and is not binary data
 	     
 	      setStatisticsObject(new String(responseBody));
+	      System.out.println(new String(responseBody));
 
 	    } catch (HttpException e) {
 

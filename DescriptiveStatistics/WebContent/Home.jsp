@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="Home.css">
 <title>Descriptive Statistics</title>
 </head>
-<body onload="setNumberCountDropDown()">
+<body>
 
 	<h3 id=mainHeading>Descriptive Statistics</h3>
 	<div id="containerMain">
@@ -67,8 +67,8 @@
 
 		function isEmpty() {
 			var element = document.getElementById("dropdownNumbers").value;
-			if (element.length<1) {
-				alert("Please provide the count for random numbers.");
+			if (element.length<1 || element=="0") {
+				alert("Please provide the valid count. (1-9999)");
 				return false;
 			}
 			return true;
