@@ -44,8 +44,9 @@ public class StandardDeviationCalulator {
 			sumValue = sumValue * sumValue;
 			totalSum = sumValue + totalSum;
 		}
+		
 
-		double stdVal = squarRoot(totalSum / (randomNumbersArray.size()));
+		double stdVal = totalSum==0?0:squarRoot(totalSum / (randomNumbersArray.size()));
 		stdVal = RoundValues.round(stdVal, 4);
 		this.stdValue = stdVal;
 		return stdVal;
